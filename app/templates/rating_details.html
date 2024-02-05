@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Details</title>
+    <!-- Add any additional CSS styles or links here -->
+</head>
+<body>
+
+  <h1>Rating Details</h1>
+
+  <p><strong>ID:</strong> {{ rating.id }}</p>
+  <p><strong>Full Name:</strong> {{ rating.fullName }}</p>
+  <p><strong>Email:</strong> {{ rating.email }}</p>
+  <p><strong>Rating:</strong> {{ rating.rating }}</p>
+  <p><strong>Title:</strong> {{ rating.title }}</p>
+  <p><strong>Comment:</strong> {{ rating.comment }}</p>
+  <p><strong>Lawyer ID:</strong> {{ rating.lawyer_id }}</p>
+  <p><strong>Status:</strong> {{ rating.status }}</p>
+
+  <!-- Add any additional details you want to display -->
+
+  <!-- Admin actions -->
+  
+    <form method="post" action="{{ url_for('auth.accept_rating', rating_id=rating.id) }}">
+        <button type="submit">Accept Rating</button>
+    </form>
+
+    <form method="post" action="{{ url_for('auth.delete_rating', rating_id=rating.id) }}">
+        <button type="submit">Delete Rating</button>
+    </form>
+ 
+
+  <!-- Add navigation links or buttons here -->
+  <a href="{{ url_for('auth.admin_ratings') }}">Back to Ratings</a>
+
+  <!-- Add any additional scripts or JavaScript code here -->
+
+</body>
+</html>

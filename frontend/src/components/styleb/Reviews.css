@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+/* Reviews.css */
+
+.reviews-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: left;
+}
+
+.reviews-and-buttons {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.reviews-list-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-list {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out; 
+}
+
+
+.review {
+  background-color: rgba(11, 14, 21, 1);
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  flex: 0 0 calc(100% / ${({ reviews }) => reviews.length});
+  border: 2px solid rgba(218, 182, 80, 1); 
+}
+
+
+.stars {
+  color: #DAB650;
+  font-size: 20px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.author {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.comment {
+  color: white;
+  margin-top: 10px;
+}
+
+/* Images styling */
+button img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-button {
+  background-color: #DAB650;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button1 {
+  background-color:#DAB650;
+  color: black;
+  padding: 10px 20px; /* Ajustez les valeurs de la marge intérieure selon vos besoins */
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+/* Style du bouton au survol */
+.button1:hover {
+  transform: scale(1.1); /* Ajustez la valeur pour l'effet de zoom au survol */
+}
+
+/* Style du bouton au clic */
+.button1:active {
+  background-color: black;
+  color: #DAB650;
+}
+
+
+
+  

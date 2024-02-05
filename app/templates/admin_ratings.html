@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Ratings</title>
+    <!-- Add any additional CSS styles or links here -->
+</head>
+<body>
+
+  <h1>Admin Ratings</h1>
+
+  {% for rating in ratings %}
+    <div>
+      <p><strong>ID:</strong> {{ rating.id }}</p>
+      <p><strong>Full Name:</strong> {{ rating.fullName }}</p>
+      <p><strong>Email:</strong> {{ rating.email }}</p>
+      <p><strong>Rating:</strong> {{ rating.rating }}</p>
+      <p><strong>Title:</strong> {{ rating.title }}</p>
+      <p><strong>Comment:</strong> {{ rating.comment }}</p>
+      <p><strong>Lawyer ID:</strong> {{ rating.lawyer_id }}</p>
+      <p><strong>Status:</strong> {{ rating.status }}</p>
+
+      <!-- Add any additional details you want to display -->
+
+      <!-- "Check" button for each rating -->
+      <a href="{{ url_for('auth.rating_details', rating_id=rating.id) }}">
+        <button>Check</button>
+      </a>
+    </div>
+    <hr>
+  {% endfor %}
+
+  <!-- Add navigation links or buttons here -->
+  <!-- For example, a link to go back -->
+  <a href="{{ url_for('auth.admindash') }}">Back to Home</a>
+
+  <!-- Add any additional scripts or JavaScript code here -->
+
+</body>
+</html>

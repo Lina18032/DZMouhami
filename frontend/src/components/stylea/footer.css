@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+footer {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #0B0E15;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+  }
+.three{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+
+}
+footer .three .three1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    gap: 25%;
+    
+    width: 100%;
+}
+.one , .ones{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+h3{
+    font-weight: 400;
+    font-family: 'Lora',serif;
+    font-size: 22px;
+    color: #DAB650;
+    margin-bottom: 5px;
+}
+a{
+    font-size: large;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Jost';
+}
+button{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-family: 'Jost';
+}
+.ones{
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}

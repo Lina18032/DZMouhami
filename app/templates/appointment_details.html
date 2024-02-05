@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+</head>
+<body>
+    <h1>Appointment Details</h1>
+    
+    <p>Date: {{ appointment.appointment_date }}</p>
+    <p>Time: {{ appointment.appointment_time }}</p>
+    <p>Name: {{ appointment.user_name }}</p>
+    <p>Email: {{ appointment.user_email }}</p>
+    <p>Phone: {{ appointment.user_phone }}</p>
+    <p>Status: {{ appointment.status }}</p>
+
+    <a href="{{ url_for('auth.confirm_appointment', appointment_id=appointment.id) }}">Confirm</a>
+    
+    <a href="{{ url_for('auth.lawyer_appointments', lawyer_id=appointment.lawyer.id) }}">Back to Lawyer Appointments</a>
+</body>
+</html>

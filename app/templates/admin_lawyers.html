@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head content -->
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lawyer in lawyers %}
+                <tr>
+                    <td>{{ lawyer.firstName }}</td>
+                    <td>{{ lawyer.lastName }}</td>
+                    <td>{{ lawyer.email }}</td>
+                    <td>
+                        <form action="{{ url_for('auth.delete_lawyer', lawyer_id=lawyer.id) }}" method="post">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

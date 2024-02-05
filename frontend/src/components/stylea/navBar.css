@@ -1,0 +1,55 @@
+/* NavBar.css */
+nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+    align-items: center;
+    width: 96%;
+    padding: 10px;
+    margin-left: 10px;
+
+    background-color: transparent;
+    color: white;
+    z-index: 11;
+  }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+button img{
+    width: inherit;
+    height: inherit;
+}
+  
+.logo  {
+    width: 80px;
+    height: 80px;
+
+
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+}
+  
+  .language-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 3%;
+  }
+  
+  .language-circles img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  

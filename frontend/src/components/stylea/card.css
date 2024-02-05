@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    align-content: center;
+    margin-left: 45px;
+
+    align-self: center;
+    gap: 30px;
+    width: 90%;
+    padding: 12px;
+
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: start;
+  }
+  
+  .card h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: 'Nunito';
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Jost';
+  }
+  
+
+  

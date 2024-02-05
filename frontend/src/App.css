@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media  (max-width: 1054px) {
+  
+  .card h2 {
+    font-size: 20px;
+  }
+  .card p {
+    font-size: 17px;
+  }
+  .card-image{
+    width: 132px;
+    height: 132px;
+  }
+  .cards{
+    gap: 0;
+  }
+  .titleButton h1{
+    font-size: 38px;
+  }
+}
+@media (max-width: 968px) {
+  .titleButton h1{
+    font-size: 27px;
+  }
+
+}
+@media (max-width: 915px) {
+  .card h2 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .card-image{
+    width: 128px;
+    height: 128px;
+  }
+  .imgktiba img {
+    width: 68%;
+    height: 360px;
+    
+  }
+  .about h1{
+    font-size: 26px;
+
+  }
+  .about p {
+    font-size: 16px;
+  }
+  header h1 { 
+    font-size: 38px;
+  }
+  header h2{
+    font-size: 35px;
+  }
+  footer .three {
+    gap: 7%;
+  }
+  .ktiba p {
+    font-size: 16px;
+  }
+  footer h3{
+    font-size: 19px;
+  }
+  footer a {
+    font-size: 17px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 840px) {
+  .card h2 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+  .titleButton h1{
+    font-size: 26px;
+  }
+}
+@media (max-width: 683px) {
+  .card-image{
+    width: 113px;
+    height: 113px;
+  }
+  .card h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 683px) {
+  .cards{
+    flex-direction: column;
+  }
+  .card  {
+    flex-direction: row;
+    width: 80%;
+  }
+}

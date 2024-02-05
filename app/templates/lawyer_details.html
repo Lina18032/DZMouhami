@@ -1,0 +1,36 @@
+<!-- lawyer_details.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Details</title>
+    <!-- Add any additional CSS styles or links here -->
+</head>
+<body>
+
+  <h1>Lawyer Details</h1>
+
+  <p><strong>ID:</strong> {{ lawyer.id }}</p>
+  <p><strong>Name:</strong> {{ lawyer.firstName }} {{ lawyer.lastName }}</p>
+  <p><strong>Email:</strong> {{ lawyer.email }}</p>
+  <p><strong>Status:</strong> {{ lawyer.status }}</p>
+
+  <!-- Add any additional details you want to display -->
+
+  <!-- Form for accepting/refusing the lawyer -->
+  <form method="post" action="{{ url_for('auth.lawyer_details', lawyer_id=lawyer.id) }}">
+      <button type="submit" name="action" value="accept">Accept</button>
+      <button type="submit" name="action" value="refuse">Refuse</button>
+  </form>
+
+  <!-- Add navigation links or buttons here -->
+  <!-- For example, a link to go back -->
+  <a href="{{ url_for('auth.admindash') }}">Back to Admin Dashboard</a>
+
+  <!-- Add any additional scripts or JavaScript code here -->
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Appointment</title>
+</head>
+<body>
+    <h1>Create Appointment</h1>
+    
+    <form method="post">
+        <label for="user_name">Name:</label>
+        <input type="text" name="user_name" required><br>
+
+        <label for="user_email">Email:</label>
+        <input type="email" name="user_email" required><br>
+
+        <label for="user_phone">Phone:</label>
+        <input type="tel" name="user_phone" required><br>
+
+        <label for="appointment_date">Date:</label>
+        <input type="date" name="appointment_date" required><br>
+
+        <label for="appointment_time">Time:</label>
+        <input type="time" name="appointment_time" required><br>
+
+        <button type="submit">Create Appointment</button>
+    </form>
+
+    <a href="{{ url_for('auth.profile', lawyer_id=lawyer.id) }}">Back to Lawyer Profile</a>
+</body>
+</html>

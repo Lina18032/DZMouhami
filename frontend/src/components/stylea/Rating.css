@@ -1,0 +1,18 @@
+/* Rating.css */
+.rating {
+    display: flex;
+    font-size: 30px;
+  }
+  
+  .star {
+    color: #ccc; 
+    border: #DAB650;
+  }
+  
+  .star.filled {
+    color: #DAB650; /* Set the filled star color */
+  }
+  
+  
+
+  

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+
+
+.lawyercard {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-self: start;
+    border: none;
+    border-radius: 8px;
+    background-color: #0B0E15;;
+    overflow: hidden;
+    margin: 10px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+  }
+  .lawyercard:hover {
+    transform: scale(1.05); /* Scale up the lawyercard on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+  }
+  .lawyercard img {
+    width: 200px;
+    height: 200px;
+
+  }
+  
+
+  
+  .lawyercard:hover {
+    padding: 10px;
+    text-align: start;
+  }
+  
+  h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: 'Nunito';
+  }
+  
+  p {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Jost';
+    text-align: start;
+    margin-top: 5px;
+  }
+  .tel{
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .tel img{
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    border: none;
+ 
+  }

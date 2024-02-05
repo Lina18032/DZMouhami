@@ -1,0 +1,26 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5%;
+    margin-bottom: 170px;
+    margin-top: 100px;
+
+}
+.filter ,.cancelfilter{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1.5px solid #DAB650;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: #DAB650;
+    margin-left: 20px;
+    gap: 5px;
+}
+.list button img{
+    width: 30px;
+    height: 30px;
+}

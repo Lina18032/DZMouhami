@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Messages {
+  color: white;
+  margin: 0;
+  width: 100%;
+  background: black;
+  height: auto; /* Changer la hauteur à auto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.Table {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+  .borderBottom {
+    border-bottom: 1px solid white; /* Couleur de la bordure blanche */
+    padding-left: 10px
+  }
+  
+  .button1 {
+    background-color:#DAB650;
+    color: black;
+    padding: 10px 20px; /* Ajustez les valeurs de la marge intérieure selon vos besoins */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px; /* Ajoute des coins arrondis */
+  }
+  
+  /* Style du bouton au survol */
+  .button1:hover {
+    transform: scale(1.1); /* Ajustez la valeur pour l'effet de zoom au survol */
+  }
+  
+  /* Style du bouton au clic */
+  .button1:active {
+    background-color: black;
+    color: #DAB650;
+  }
+  
+  .button2 {
+    background-color: black; /* Fond noir */
+    color: #DAB650;
+    padding: 10px 20px; /* Ajustez les valeurs de la marge intérieure selon vos besoins */
+    border: 2px solid #DAB650;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    width: 200px;
+
+  }
+
+  /* Style du bouton au survol */
+  .button2:hover {
+    transform: scale(1.1); /* Ajustez la valeur pour l'effet de zoom au survol */
+  }
+  
+  /* Style du bouton au clic */
+  .button2:active {
+    background-color: #DAB650;
+    color: black;
+  }
+

@@ -1,0 +1,111 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+  }
+.headerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 8%;
+    width: 90%;
+}
+header h1{
+    text-transform: uppercase;
+    font-family: 'EB Garamond',serif;
+    font-size: 45px;
+    color: #DAB650;
+    margin-bottom: 0px;
+    text-align: start;
+    font-weight: 600;
+}
+header h2{
+    text-transform: capitalize ;
+    font-family: 'Lora',serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: start;
+}
+header .wilaya{
+    Border: 1.5px solid #ffffff;
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+    padding-left: 10px;
+  padding-left: 10px;
+  padding-left: 6%;
+  border-radius: 5px;
+  margin-right: 15px;
+  color: #ffffff;
+  background: black;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 85%;
+}
+.search-bar button{
+    background-color: #DAB650;
+    width: 100px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 7px;
+    color: #0B0E15;;
+}
+.search-bar a{
+    color: #0B0E15;
+}
+form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    position: relative;
+}
+.search-bar input {
+    Border : 1.5px solid #ffffff;
+    background-color: transparent;
+    width: 22%;
+    height: 30px;
+    padding: 10px;
+    padding-left: 6%;
+    border-radius: 5px;
+    margin-right: 15px;
+
+    color: #ffffff;
+}
+.search-bar img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+
+    bottom: 20.8%
+}
+
+  .linear{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+  }

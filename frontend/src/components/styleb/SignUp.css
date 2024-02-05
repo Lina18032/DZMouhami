@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+  
+  .page-container-SignUp {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .page-container-SignUp .container {
+    padding: 20px;
+    width: 500px;
+    width: 50%;
+
+  }
+
+  h2{
+    text-transform: capitalize ;
+    font-family: 'Lora',serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: start;
+}
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  h1{
+    color: #fff;
+    font-family: 'Lora',serif;
+
+    font-weight: normal;
+    font-size: 43px;
+  }
+  .page-container-SignUp form {
+    display: flex;
+    flex-direction:column;
+    background-color:rgba(11, 14, 21, 1);border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    padding-top: 70px;
+  }
+  
+  .page-container-SignUp .form-section {
+    background-color:rgba(11, 14, 21, 1);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .page-container-SignUp label {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page-container-SignUp input[type="file"] {
+    display: flex;
+    width: 300px;
+  }
+  
+  .page-container-SignUp .file-upload-icon {
+    background-color:rgba(11, 14, 21, 1);
+    color: #888;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  
+  .page-container-SignUp input[type="text"], .page-container-SignUp
+  input[type="password"], .page-container-SignUp 
+  textarea {
+    width: 62%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    margin-bottom: 25px;
+
+    border-radius: 4px;
+    background-color: rgba(11, 14, 21, 1);
+    color: white;
+  }
+  
+  .page-container-SignUp input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .page-container-SignUp .spoken-languages {
+    display: flex;
+    gap: 5%;
+    margin: 10px;
+  }
+
+  .page-container-SignUp .terms-of-use {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .page-container-SignUp .terms-of-use a {
+    text-decoration: none;
+  }
+  
+  .page-container-SignUp .terms-of-use a:hover {
+    text-decoration: underline;
+  }
+  
+  .page-container-SignUp .button1 {
+    background-color:rgba(218, 182, 80, 1);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+    width: 31%;
+  }
+  .page-container-SignUp .button1:hover {
+    transform: scale(1.1); 
+  }
+  .page-container-SignUp .button1:active {
+    background-color: black;
+    color: rgba(218, 182, 80, 1);
+  }
+
+  .page-container-SignUp.sign-in-section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .page-container-SignUp .sign-in-link {
+    color:rgba(218, 182, 80, 1);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .page-container-SignUp .sign-in-link:hover {
+    text-decoration: underline;
+  }
+  .page-container-SignUp span {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .page-container-SignUp label{
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .page-container-SignUp .addPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 62%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .page-container-SignUp .addPic label{
+    margin-bottom: 0
+  }
+  .page-container-SignUp .terms-of-use span{
+    color: #fff;
+
+
+  }
+  .page-container-SignUp .terms-of-use {
+    margin-bottom: 15px;
+  }
+  .page-container-SignUp p {
+    text-align: center;
+    margin: 15px;
+    font-family: 'EB Garamond';
+    font-size: 20px;
+  }
+  .page-container-SignUp .sign-in-section a{
+    color: #DAB650;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  

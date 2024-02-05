@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Appointments</title>
+</head>
+<body>
+    <h1>Lawyer Appointments</h1>
+    
+    <ul>
+        {% for appointment in appointments %}
+            <li>
+                {{ appointment.appointment_date }} at {{ appointment.appointment_time }} - {{ appointment.user_name }} (Status: {{ appointment.status }})
+                <a href="{{ url_for('auth.appointment_details', appointment_id=appointment.id) }}">Details</a>
+                <a href="{{ url_for('auth.delete_appointment', appointment_id=appointment.id) }}">Delete</a>
+            
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('auth.lawyer_appointments', lawyer_id=lawyer.id) }}">Back to Lawyer Profile</a>
+</body>
+</html>

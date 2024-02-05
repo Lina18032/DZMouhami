@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+.add-review {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .add-review label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .add-review input ,.add-review textarea  {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border: 1px solid #DAB650;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 60%;
+  }
+  
+  .required {
+    color: red;
+    margin-right: 5px; /* Marge à droite pour l'étoile */
+  }
+
+  .add-review form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    align-items: flex-start;
+    width: 60%;
+    border: 2px solid #DAB650;
+    padding: 20px;
+  }
+  .add-review form .form-div {
+    width: 100%;
+  }
+  
+  .divbuttonreview {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+  }
+   .divbuttonreview .button2{
+    width: 110px;
+  }
+  .divbuttonreview .button1{
+    width: 110px;
+  }
+  input:read-only{
+    border: none;
+    margin-bottom: 0;
+  }
+  .rating-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }

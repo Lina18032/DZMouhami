@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+.ProfilLawyer {
+    background-color:#0B0E15; /* Fond du corps en noir */
+    color: white; /* Texte du corps en blanc */
+}
+
+.ProfilLawyer .left-block {
+    float: left;
+    width: 25%;
+}
+
+.ProfilLawyer .right-block {
+    float: right;
+    width: 70%;
+}
+
+.ProfilLawyer .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ProfilLawyer .space-between {
+    margin-right: 10px;
+}
+
+ .ProfilLawyer {
+    margin: 50px;
+    text-align: start;
+    padding: 35px;
+}
+
+.ProfilLawyer h1,
+.ProfilLawyer h2,
+.ProfilLawyer h3,
+.ProfilLawyer p {
+    color: white;
+}
+
+.ProfilLawyer .etoile {
+    color: yellow; 
+    font-size: 30px;
+}
+
+.ProfilLawyer .logo{
+    max-width: 25px; /* Ajustez la taille maximale des logos selon vos préférences */
+    height: auto;
+}
+
+
+
+.ProfilLawyer .timeline-line {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    color: white;
+}
+/* Nouveau style pour le curseur de la timeline */
+/* Nouveau style pour le curseur de la timeline */
+.ProfilLawyer .timeline-cursor {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff !important; /* Couleur du curseur (blanc dans cet exemple) */
+    border: 2px solid #ffffff !important; /* Bordure du curseur */
+    border-radius: 50%; /* Pour créer un cercle */
+    position: absolute;
+    top: -4px; /* Pour centrer le curseur verticalement par rapport à la ligne */
+    left: 50%; /* Pour centrer le curseur horizontalement par rapport à la ligne */
+    transform: translateX(-50%); /* Pour centrer correctement le curseur */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.ProfilLawyer .button1{
+    width: 110px;
+    margin-left: 10px;
+}
+.popup  {
+    background-color: #0B0E15;
+    margin-left: 28%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ProfilLawyer .button2{
+    width: 150px;
+}
+/* Ajoutez ces styles à votre fichier CSS existant */
+
+/* Style général du formulaire */
+.popup form {
+    width: 100%;
+    max-width: 400px; /* Ajustez la largeur maximale selon vos préférences */
+    margin: 0 auto;
+    background-color: #0B0E15;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.popup form h1 , .popup form h2{
+    margin-top: 0;
+}
+/* Style des champs du formulaire */
+.popup form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.popup form input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 3px;
+    border: 1px solid rgba(218, 182, 80, 1);
+    background-color: #0B0E15;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Style du bouton "Envoyer" */
+.popup form button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #DAB650;
+    color: black;
+}
+
+/* Style du bouton "Annuler" */
+.ProfilLawyer form button.cancel {
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid #DAB650;
+}
+
+/* Style pour rendre la disposition responsive */
+@media screen and (max-width: 600px) {
+    .ProfilLawyer form {
+        max-width: 100%; /* Pour occuper toute la largeur sur les petits écrans */
+    }
+}
+
+.popup-footer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    background-color: #DAB650;
+    margin-right: 5px;
+    border-radius: 7px;
+    height: fit-content;
+    color: #0B0E15;
+}
+.popup-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-bottom:10px ;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.modalclass{
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}

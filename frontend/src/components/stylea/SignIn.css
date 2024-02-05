@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+ 
+  }
+  
+  .sign h1{
+    color: #fff;
+    font-family: 'Lora',serif;
+
+    font-weight: normal;
+    font-size: 40px;
+  }
+  .sign form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 30px;
+    background-color: #0B0E15;
+    border-radius: 7px;
+    margin: 30px;
+    margin-bottom: 7px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .sign form button {
+    background-color: #DAB650;
+    color: #0B0E15;
+    border-radius: 7px;
+    width: 70%;
+    transition: transform 0.2s ease-in-out;
+
+  }
+  .sign form button:hover {
+    transform: scale(1.1); 
+  }
+  
+  .sign form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sign form label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 70%;
+    transform: translateY(-50%);
+    color: #87898D;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    text-align: left;
+    margin-left: 13%;
+    font-family: 'Jost',serif;;
+  }
+  
+  .sign form input {
+    color: #ffffff;
+    background-color: #0B0E15;
+    height: 40px;
+    border: none;
+    border-bottom: 1.5px solid #2c385275;
+    width: 70%;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .sign form label.focused {
+    top: 3px;
+    font-size: 15px;
+
+  }
+
+  .sign p{
+    color: #ffffff;
+    font-size: medium;
+    font-family: 'Jost',serif;
+    margin-bottom: 60px;
+
+  }
+  .sign p a{
+    color: #DAB650;
+    font-weight: bold;
+    margin-left: 7px;
+    font-family: 'Jost',serif;
+    cursor: pointer;
+
+  }
+  .sign .juge img{
+    position: absolute;
+    bottom: 83px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+  }
+  /* style/SignIn.css */
+/* ... existing styles ... */
+
+.sign form .form-group.incorrect input {
+    border-bottom-color: red;
+  }
+  
+  /* ... existing styles ... */
+  
+  
+
+
+  /*.sign h2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DAB650;
+    transition: width 0.5s ease;
+  }
+  
+  .sign h2:hover::before {
+    width: 100%;
+  }*/
+  

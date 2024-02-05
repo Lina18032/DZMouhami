@@ -1,0 +1,46 @@
+
+.manage-comments-container {
+    margin: 10%; 
+  }
+  
+  .manage-comments-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .manage-comments-container div {
+    margin-bottom: 10px;
+  }
+
+  .star-rating {
+    color: #DAB650;
+    display: inline-block; 
+  font-size: 20px; 
+  margin-right: 5px;
+  }
+  .button1 {
+    background-color:#DAB650;
+    color: black;
+    padding: 10px 20px; /* Ajustez les valeurs de la marge intérieure selon vos besoins */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px; /* Ajoute des coins arrondis */
+  }
+  
+  /* Style du bouton au survol */
+  .button1:hover {
+    transform: scale(1.1); /* Ajustez la valeur pour l'effet de zoom au survol */
+  }
+  
+  /* Style du bouton au clic */
+  .button1:active {
+    background-color: black;
+    color: #DAB650;
+  }
+  .added {
+    background-color: black;
+    color: white;
+    /* Ajoutez d'autres styles selon vos besoins */
+  }
+  

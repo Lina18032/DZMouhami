@@ -1,0 +1,55 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-left: 6%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-left: 6px;
+    padding-top: 0;
+ 
+  }
+  
+  .about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    align-self: self-start;
+  }
+  
+
+  
+  .imgktiba {
+    gap: 10%;
+    width: 100%;
+
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .imgktiba p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .imgktiba img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.048);
+  }
+  
+  .ktibaa {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .ktibaa p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: start;
+  }
+  

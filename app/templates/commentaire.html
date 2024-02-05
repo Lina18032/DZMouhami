@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commentaires</title>
+</head>
+<body>
+    {% if confirmation %}
+        <h1>Votre commentaire a été enregistré avec succès !</h1>
+        <p>Voici le contenu de votre commentaire :</p>
+        <p>Prénom : {{ confirmation.firstName }}</p>
+        <p>Email : {{ confirmation.email }}</p>
+        <p>Commentaire : {{ confirmation.comment }}</p>
+        <p>Note : {{ confirmation.rating }}</p>
+    {% endif %}
+
+    <h1>Commentaires existants :</h1>
+    {% for commentaire in commentaires %}
+        <p>{{ commentaire[2] }} a dit : {{ commentaire[4] }} - Note: {{ commentaire[5] }}</p>
+    {% endfor %}
+
+
+    <h1>Ajouter un commentaire</h1>
+    <form method="post" action="">
+        <label for="firstName">Prénom :</label>
+        <input type="text" name="firstName" required><br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" required><br>
+
+        <label for="comment">Commentaire :</label>
+        <textarea name="comment" required></textarea><br>
+
+        <label for="rating">Note :</label>
+        <input type="text" name="rating" required><br>
+
+        <button type="submit">Ajouter le commentaire</button>
+    </form>
+</body>
+</html>
