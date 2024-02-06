@@ -494,17 +494,13 @@ def ajouter_commentaire(lawyer_id, firstName, email, comment, rating):
 
     conn.commit()
     conn.close()
-# Créer la table
-#cree_table()
 
-# Ajouter les avocats
-#ajouter_avocats()
 
 def afficher_commentaires_lawyer(id_lawyer):
     conn = sqlite3.connect('lawyer.db')
     cur = conn.cursor()
 
-    # Sélectionner tous les commentaires pour un avocat spécifique
+    
     cur.execute("SELECT * FROM commentaires WHERE lawyer_id=?", (id_lawyer,))
     commentaires = cur.fetchall()
     print(commentaires)
@@ -515,7 +511,7 @@ def afficher_commentaires_lawyer(id_lawyer):
 def enregistrer_commentaires(id_lawyer):
     creer_table_commentaires()
 
-    # Récupérer les commentaires existants pour cet avocat
+    
     commentaires_existants = afficher_commentaires_lawyer(id_lawyer=id_lawyer)
 
     if request.method == "POST":
@@ -525,10 +521,10 @@ def enregistrer_commentaires(id_lawyer):
         comment = donnees.get('comment')
         rating = donnees.get('rating')
 
-        # Ajouter le commentaire dans la base de données
+        
         ajouter_commentaire(id_lawyer, firstName, email, comment, rating)
 
-        # Récupérer les données pour la page de confirmation
+        
         confirmation = {
             'firstName': firstName,
             'email': email,
@@ -536,7 +532,7 @@ def enregistrer_commentaires(id_lawyer):
             'rating': rating
         }
 
-        # Rediriger vers la page de confirmation
+        
         return render_template("commentaire.html", confirmation=confirmation, id_lawyer=id_lawyer, commentaires_existants=commentaires_existants)
 
     return render_template("commentaire.html", id_lawyer=id_lawyer, commentaires_existants=commentaires_existants)
