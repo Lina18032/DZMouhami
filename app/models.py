@@ -3,7 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 
 db = SQLAlchemy()
-
+#lawyers table
 class Lawyer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     firstName = db.Column(db.String(255), nullable=False)
@@ -27,7 +27,7 @@ class Lawyer(db.Model):
         self.password = generate_password_hash(password)
     def check_password(self, password):
         return check_password_hash(self.password, password)
-
+#admin table
 class Admin(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -38,7 +38,7 @@ class Admin(db.Model):
         self.password = generate_password_hash(password)
     def check_password(self, password):
         return check_password_hash(self.password, password)
-    
+#appointment table
 class Appointment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     lawyer_id = db.Column(db.Integer, db.ForeignKey('lawyer.id'), nullable=False)
@@ -49,7 +49,7 @@ class Appointment(db.Model):
     appointment_time = db.Column(db.String(5), nullable=False)
     status = db.Column(db.String(20), default='pending') 
 
-
+#ratings table
 class Rating(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     fullName = db.Column(db.String(255), nullable=False)
